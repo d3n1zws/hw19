@@ -6,6 +6,10 @@ namespace ConsoleApp16
 {
     internal class Department
     {
+        public override string ToString()
+        {
+            return $"Id : {Id}, Name : {Name}";
+        }
         public int Id { get; set; }
         public string Name { get; set; }
         public List<Employee> Employees = new List<Employee>();
